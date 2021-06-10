@@ -1,77 +1,603 @@
-<!DOCTYPE html>
-<head>
-    <title>Projeto Ponto - Web</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap/3.4.1/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/3.4.1/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css"/>
-    <script src="js/Jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap/3.4.1/bootstrap.min.js"></script>
+<html lang="en">
+<!doctype html>
 
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="pxdraft" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Web Work " />
+    <meta name="description" content="Web Work " />
+    <!-- title -->
+    <title>Web Work </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- plugin CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="static/plugin/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- theme css -->
+    <link href="static/style/master.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>
+<!-- Body Start -->
+<body data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="98">
+    <!-- Preload -->
+    <div id="loading">
+        <div class="load-circle"><span class="one"></span></div>
     </div>
+    <!-- End Preload -->
+    <!-- Header -->
+    <header class="header-nav header-white header-transparent">
+        <div class="fixed-header-bar">
+            <!-- Header Nav -->
+            <div class="navbar navbar-main navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-dark" alt="" title="" src="static/img/logo-dark.png">
+                        <img class="logo-light" alt="" title="" src="static/img/logo-light.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mm-in px-dropdown">
+                                <a class="nav-link" href="index.html#">Home</a>
+                                <i class="fa fa-angle-down px-nav-toggle"></i>
+                                <ul class="px-dropdown-menu mm-dorp-in">
+                                    <li><a href="sobre-nos.html">SOBRE NÓS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mm-in">
+                                <a class="nav-link" href="services.html#">Serviços</a>
+                                <!-- <i class="fa fa-angle-down px-nav-toggle"></i> -->
+                            </li>
+                            <li class="nav-item mm-in px-mega">
+                                <a class="nav-link" href="contact-us.html#javascript:void(0)">Contato</a>
+                                <i class="fa fa-angle-down px-nav-toggle"></i>
+                            </li>
+                            <li class="nav-item mm-in px-dropdown">
+                                <a class="nav-link" href="planos.html#">Planos</a>
+                                <i class="fa fa-angle-down px-nav-toggle"></i>
+                            </li>
+                            <li class="nav-item mm-in px-dropdown">
+                                <a class="nav-link" href="app.html#">Aplicativo</a>
+                                <i class="fa fa-angle-down px-nav-toggle"></i>
+                            </li>
+                        </ul>
+                        <a class="d-none d-lg-inline-block m-btn m-btn-radius m-btn-theme2nd m-btn-sm m-20px-l" href="login.html#">Login</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Nav -->
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Main -->
+    <main>
+        <!-- Home Banner -->
+        <section class="effect-section theme-bg">
+            <div class="shap-top-left opacity-1">
+                <img src="static/img/effect/style-1.svg" title="" alt="" class="svg_img dark-color">
+            </div>
+            <div class="shap-bottom-right opacity-1">
+                <img src="static/img/effect/style-2.svg" title="" alt="" class="svg_img dark-color">
+            </div>
+            <div class="svg-bottom">
+                <img src="static/img/effect/divider-2.svg" title="" alt="" class="svg_img gray-color">
+            </div>
+            <div class="container">
+                <div class="row full-screen align-items-center p-100px-t">
+                    <div class="col-lg-6 m-15px-tb">
+                        <h6 class="m-10px-b white-color">Sua empresa mais profissional</h6>
+                        <h1 class="h1 m-10px-b white-color"><span class="font-w-300">A MELHOR SOLUÇÃO </span><br />DE CONTROLE DE PONTO ONLINE </h1>
+                        <p class="font-2 white-color-light">Sistema de Controle de Ponto Online pensado para facilitar seu negócio.</p>
+                        <div class="p-20px-t m-btn-wide">
+                            <a class="m-btn m-btn-radius m-btn-white m-10px-r" href="login.html#">
+                                <span class="m-btn-inner-text">Cadastre-se Agora Mesmo!</span>
+                                <span class="m-btn-inner-icon arrow"></span>
+                            </a>
+                            <a class="m-btn m-btn-radius m-btn-theme2nd" href="login.html#">
+                                <span class="m-btn-inner-text">Logar</span>
+                                <span class="m-btn-inner-icon arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-15px-tb">
+                        <img class="max-width-120" src="static/img/ai-1.svg" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home Banner -->
+        <!-- Section -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row justify-content-center md-m-25px-b m-40px-b">
+                    <div class="col-lg-8 text-center">
+                        <h6 class="theme-color">Tratamento de Ponto</h6>
+                        <h3 class="h1 m-15px-b">Tratamento rápido e descomplicado.</h3>
+                        <p class="m-0px font-2">Uma gestão mais inteligente, o Web Work embarca na transformação do RH com você.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 m-15px-tb">
+                        <div class="box-shadow p-65px-tb p-45px-lr xl-p-35px-lr hover-top white-bg">
+                            <div class="m-30px-b icon-70">
+                                <img src="static/img/icon/104-loupe.svg" title="" alt="">
+                            </div>
+                            <h5 class="m-15px-b">Transparência</h5>
+                            <p class="m-0px">Funcionários e gestores com acesso, em tempo real, a todos os registros com localização e muito mais.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-15px-tb">
+                        <div class="box-shadow p-65px-tb p-45px-lr xl-p-35px-lr hover-top white-bg">
+                            <div class="m-30px-b icon-70">
+                                <img src="static/img/icon/102-growth.svg" title="" alt="">
+                            </div>
+                            <h5 class="m-15px-b">Produtividade</h5>
+                            <p class="m-0px">Economize tempo e dinheiro com a Web Work,velocidade com cálculos automáticos.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-15px-tb">
+                        <div class="box-shadow p-65px-tb p-45px-lr xl-p-35px-lr hover-top white-bg">
+                            <div class="m-30px-b icon-70">
+                                <img src="static/img/icon/101-interest.svg" title="" alt="">
+                            </div>
+                            <h5 class="m-15px-b">Facilidade</h5>
+                            <p class="m-0px">Registro de ponto de forma simples, prática e rápida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 m-15px-tb">
+                        <h6 class="theme-color m-10px-b">Nós Somos Web Work</h6>
+                        <h3 class="h1 m-20px-b">O controle de Ponto ideal para sua empresa</h3>
+                        <p class="m-0px">Use o Software mais completo do mercado e aumente a produtividade da sua empresa. Tenha maior controle das horas de trabalho e gerencie o ponto dos colaboradores.</p>
+                        <div class="p-25px-t row">
+                            <div class="col-sm-6">
+                                <ul class="list-type-01">
+                                    <li>Menos tempo gasto com tratativas de ponto</li>
+                                    <li>Aumento na produtividade por colaborador</li>
+                                    <li>Redução de horas extras</li>
+                                    <li>Aumento de presença e pontualidade</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-type-01">
+                                    <li>Suporte via email</li>
+                                    <li>Pontos em tempo real</li>
+                                    <li>Alertas de divergências</li>
+                                    <li>Cálculos de horas extras e banco de horas</li>
+									<li>Ajustes e fechamento da folha de pontos</l>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Plan -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row justify-content-center md-m-25px-b m-40px-b">
+                    <div class="col-lg-8 text-center">
+                        <h6 class="theme-color">Web Work</h6>
+                        <h3 class="h1 m-15px-b">Registro de ponto via web ou mobile.</h3>
+                        <p class="m-0px font-2">Visualização de comprovantes e divergências.</p>
+                    </div>
+                </div>
+                <div class="plan-content grid-gutter-lg grid-col-3 lightbox-gallery">
+                    <div class="grid-item product branding">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-1.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-1.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product photoshop">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-2.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-2.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product photoshop">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-3.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-3.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product photoshop">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-5.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-5.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product branding fashion">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-4.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-4.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product branding fashion">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-6.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-6.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product product">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-7.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-7.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product product">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-8.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-8.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                    <div class="grid-item product product">
+                        <div class="plan-box-01">
+                            <div class="plan-info">
+                                <h5><a href="index.html#">Momb ios App</a></h5>
+                                <span>Broadcasting ios App</span>
+                                <div class="btn-bar">
+                                    <a href="static/img/m-plan-9.jpg" class="m-link-white gallery-link">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-img">
+                                <img src="static/img/m-plan-9.jpg" title="" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- grid item -->
+                </div> <!-- Plan-content -->
+            </div>
+        </section>
+        <!-- End Plan -->
+        <!-- Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 m-15px-tb">
+                        <img src="static/img/ai-2.svg" title="" alt="">
+                    </div>
+                    <div class="col-lg-6 m-15px-tb">
+                        <div class="p-45px-l lg-p-0px-l">
+                            <h3 class="h2 m-15px-b">Segurança Jurídica e Proteção dos Dados.</h3>
+                            <p class="font-2">Mantenha-se focado no seu negócio, Vamos cuidar da segurança, com a Web Work você fica tranquilo que está seguindo a lei e com dados protegidos para sempre.
+O sistema de controle de ponto da Web Work segue todas as diretrizes da portaria 373 do ministério do trabalho para te dar toda segurança jurídica de estar cumprindo 100% as leis de controle de ponto.</p>
+                            <div class="row counter p-15px-t">
+                                <div class="col-4 col-lg-3  border-right">
+                                    <div class="count-data">
+                                        <h6 class="count h4 theme-color after-k m-5px-b" data-to="10" data-speed="10">10</h6>
+                                        <span>Clientes</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="count-data">
+                                        <h6 class="count h4 theme-color after-p m-5px-b" data-to="99" data-speed="99">99</h6>
+                                        <span>Satisfação</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Section -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row md-m-25px-b m-40px-b justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h6 class="theme-color">Planos </h6>
+                        <h3 class="h1 m-15px-b">Simples, preço justo.</h3>
+                        <p class="m-0px font-2">Sua empresa automatiza rotinas burocráticas em gestão de pessoas, elimina custos invisíveis e aumenta a segurança jurídica e fiscal para focar no que importa: as pessoas.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 m-15px-tb">
+                        <div class="box-shadow hover-top white-bg">
+                            <div class="p-40px-t p-20px-lr">
+                                <h4 class="h1"><span>R$</span>39,90</h4>
+                                <p class="m-0px">Básico</p>
+                            </div>
+                            <div class="p-20px">
+                                <ul class="list-type-02">
+                                    <li>Funcionalidades básicas</li>
+                                    <li>Suporte via email</li>
+                                    <li>Até 10 funcionários</li>
+                                </ul>
+                                <div class="p-20px-tb">
+                                    <a class="m-btn m-btn-sm m-btn-theme m-btn-radius w-100" href="contact-us.html#">Solicitar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 m-15px-tb">
+                        <div class="box-shadow hover-top white-bg">
+                            <div class="p-40px-t p-20px-lr">
+                                <h4 class="h1"><span>R$</span>89,90</h4>
+                                <p class="m-0px">Básico</p>
+                            </div>
+                            <div class="p-20px">
+                                <ul class="list-type-02">
+                                    <li>Funcionalidades básicas</li>
+                                    <li>Suporte via email</li>
+                                    <li>Até 30 funcionários</li>
+                                </ul>
+                                <div class="p-20px-tb">
+                                    <a class="m-btn m-btn-sm m-btn-theme m-btn-radius w-100" href="contact-us.html#">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 m-15px-tb">
+                        <div class="box-shadow hover-top white-bg">
+                            <div class="p-40px-t p-20px-lr">
+                                <h4 class="h1"><span>R$</span>169,90</h4>
+                                <p class="m-0px">Premium</p>
+                            </div>
+                            <div class="p-20px">
+                                <ul class="list-type-02">
+                                    <li>Suporte Premium</li>
+                                    <li>Plano básico incluso</li>
+                                    <li>Suporte via email e via chat</li>
+                                    <li>Sem limites de funcionários (1x/mês)</li>
+                                </ul>
+                                <div class="p-20px-tb">
+                                    <a class="m-btn m-btn-sm m-btn-theme m-btn-radius w-100" href="contact-us.html#">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Section -->
+        <section class="section effect-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-xl-5">
+                        <h2 class="h1 m-15px-b">Trabalhando para construir um controle de ponto melhor</h2>
+                        <p class="font-2 m-20px-b">Estamos comprometidos com o sucesso dos clientes do início ao fim. Nossa contribuição ajuda a fazer com que suas soluções se destaquem da multidão.</p>
+                        <p>Web Work é simplesmente o melhor plano para sua empresa implementar ponto eletrônico digital sem complicações.</p>
+                        <div class="p-10px-t">
+                            <a class="m-btn m-btn-radius m-btn-theme" href="login.html#">
+                                <span class="m-btn-inner-text">Faça seu cadastro</span>
+                                <span class="m-btn-inner-icon arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ml-auto">
+                        <img class="max-width-120" src="static/img/ai-3.svg" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Section -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row md-m-25px-b m-40px-b justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h6 class="theme-color">Prático</h6>
+                        <h3 class="h1 m-15px-b">Um Departamento Pessoal Digital.</h3>
+                        <p class="m-0px font-2">Acesse de onde estiver, pelo celular, tablet ou pela web para bater ou controlar os pontos.</p>
+                    </div>
+                </div>
+                <div class="owl-carousel" data-items="3" data-nav-dots="true" data-md-items="2" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="0" data-autoplay="true">
+                    <div class="card p-25px box-shadow m-15px">
+                        <p class="m-0px">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.</p>
+                        <div class="media m-20px-t">
+                            <div class="avatar-60 border-radius-50">
+                                <img src="static/img/avatra-1.jpg" alt="" title="">
+                            </div>
+                            <div class="media-body p-15px-l align-self-center">
+                                <h6 class="m-0px">Shoko Mugikura</h6>
+                                <span class="font-small">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-25px box-shadow m-15px">
+                        <p class="m-0px">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.</p>
+                        <div class="media m-20px-t">
+                            <div class="avatar-60 border-radius-50">
+                                <img src="static/img/avatra-1.jpg" alt="" title="">
+                            </div>
+                            <div class="media-body p-15px-l align-self-center">
+                                <h6 class="m-0px">Shoko Mugikura</h6>
+                                <span class="font-small">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-25px box-shadow m-15px">
+                        <p class="m-0px">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.</p>
+                        <div class="media m-20px-t">
+                            <div class="avatar-60 border-radius-50">
+                                <img src="static/img/avatra-1.jpg" alt="" title="">
+                            </div>
+                            <div class="media-body p-15px-l align-self-center">
+                                <h6 class="m-0px">Shoko Mugikura</h6>
+                                <span class="font-small">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-25px box-shadow m-15px">
+                        <p class="m-0px">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.</p>
+                        <div class="media m-20px-t">
+                            <div class="avatar-60 border-radius-50">
+                                <img src="static/img/avatra-1.jpg" alt="" title="">
+                            </div>
+                            <div class="media-body p-15px-l align-self-center">
+                                <h6 class="m-0px">Shoko Mugikura</h6>
+                                <span class="font-small">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+    </main>
+    <!-- End Main -->
+    <!-- Footer-->
+    <footer class="dark-bg footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-2 m-15px-tb">
+                    </div>
+                    <div class="col-6 col-lg-2 m-15px-tb">
+                        
+                    </div>
+                    <div class="col-lg-5 m-15px-tb">
+                        <form>
+                            <div class="d-flex flex-column flex-md-row m-5px-b">
+                            </div>
+                            <p class="white-color-light m-0px font-small p-10px-t">Web Work - Tecnologia para Gestão Empresarial.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom border-style top light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right m-5px-tb">
+                        <ul class="nav justify-content-center justify-content-md-start links-white font-small footer-link-1">
+                            <li><a href="blog.html#">Privace &amp; Policy</a></li>
+                            <li><a href="blog.html#">Faq's</a></li>
+                            <li><a href="blog.html#">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right m-5px-tb">
+                        <p class="m-0px font-small white-color-light">© Copyright 2021 Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- jquery -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+    <!-- end jquery -->
+    <!-- appear -->
+    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <!-- end appear -->
+    <!--bootstrap-->
+    <script src="static/plugin/bootstrap/js/popper.min.js"></script>
+    <script src="static/plugin/bootstrap/js/bootstrap.js"></script>
+    <!--end bootstrap-->
+    <!-- End -->
+    <!-- custom js -->
+    <script src="static/js/custom.js"></script>
+    <!-- end -->
 </body>
+<!-- end body -->
+
+</html>
